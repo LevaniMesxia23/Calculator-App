@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p class="calc">calc</p>
+      <div class="header-right">
+        <p class="theme">THEME</p>
+        <div class="toggle-div">
+          <div class="toggle-p">
+          <p class="toggle-nums">1</p>
+          <p class="toggle-nums">2</p>
+          <p class="toggle-nums">3</p>
+          </div>
+          <div class="slider">
+            <input type="range" min="1" max="3" value="1" class="slide">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="answerBox">
+      <p class="answer">0</p>
+    </div>
+
+    <div class="numbers-box">
+      <button value="7" class="number">7</button>
+      <button value="8" class="number">8</button>
+      <button value="9" class="number">9</button>
+      <button value="del" class="del">DEL</button>
+      <button value="4" class="number">4</button>
+      <button value="5" class="number">5</button>
+      <button value="6" class="number">6</button>
+      <button value="+" class="number symbol">+</button>
+      <button value="1" class="number">1</button>
+      <button value="2" class="number">2</button>
+      <button value="3" class="number">3</button>
+      <button value="-" class="number symbol">-</button>
+      <button value="." class="number symbol">.</button>
+      <button value="0" class="number">0</button>
+      <button value="/" class="number symbol">/</button>
+      <button value="*" class="number symbol">x</button>
+      <div class="reset-equals">
+        <button value="res" class="reset">RESET</button>
+        <button value="=" class="equals symbol number equalsColor">=</button>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

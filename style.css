@@ -1,0 +1,366 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan";
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3A4663;
+  height: 100vh;
+}
+.container{
+  width: 540px;
+  flex-shrink: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 44px;
+  gap: 342px;
+  margin-bottom: 32px;
+}
+.header-right{
+  display: flex;
+  align-items: end;
+  column-gap: 26px;
+}
+.calc{
+  color: #FFF;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.533px;
+}
+.slide{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  width: 71px;
+  height: 26px;
+  flex-shrink: 0;
+  background-color: #242D44;
+  border-radius: 13px;
+  cursor: pointer;
+  padding: 3px;
+}
+.slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px; 
+  background-color: #D03F2F;
+  background-position: center;
+  border-radius: 50%;
+}
+.slide2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px; 
+  background-color: #C85402;
+  background-position: center;
+  border-radius: 50%;
+}
+.slide3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px; 
+  background-color: #00DED0;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.toggle-p{
+  display: flex;
+  justify-content: space-evenly;
+}
+.toggle-p p{
+  color: #FFF;
+  text-align: center;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.toggle-nums2{
+  color: #36362C;
+}
+.toggle-nums3{
+color: #FFE53D;
+}
+
+.theme{
+  color: #FFF;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+
+.answerBox{
+  width: 540px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #181F33;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 24px;
+}
+
+.answer{
+  color: #FFF;
+  text-align: right;
+  font-family: "League Spartan";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.933px;
+  margin-right: 32px;
+}
+
+.numbers-box{
+  width: 540px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #242D44;
+
+  color: #434A59;
+  text-align: center;
+
+  line-height: normal;
+  letter-spacing: -0.667px;
+  padding: 20px;
+}
+.number{
+  width: 101px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #EAE3DC;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  color: #434A59;
+
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.667px;
+}
+.number:hover{
+  background: #FFFFFE;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+}
+.number:nth-child(4n) {
+  margin-right: 0;
+}
+.del{
+  border-radius: 10px;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  width: 101px;
+  height: 66px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 28px;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
+}
+.reset-equals{
+  display: flex;
+  justify-content: space-between;
+}
+.reset{
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  margin-left: 7px;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
+}
+.reset:hover{
+  background: #A2B2E1;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+}
+.del:hover{
+  background: #A2B2E1;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+}
+
+.equalsColor{
+  background: #D03F2F;
+  box-shadow: 0px -4px 0px 0px #93261A inset;
+}
+.equalsColor:hover{
+  background: #F96B5B;
+  box-shadow: 0px -4px 0px 0px #93261A inset;
+}
+.equals{
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+
+  margin-right: 7px;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+
+.background2{
+  background-color: "#E6E6E6";
+}
+.background3{
+  background-color: "#17062A";
+}
+
+.answerBoxColor2{
+  background: #EEE;
+}
+.numberBoxColor2{
+  background: #D2CDCD;
+}
+.delResetButtonColor2{
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+.delResetButtonColor2:hover{
+  background: #62B5BC;
+  box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+.ansCalcThemeColor2{
+  color: #36362C;
+}
+.slide2{
+  background: #D2CDCD;
+}
+.slide2Thumb{
+  background-color: red;
+}
+
+
+
+.background3{
+  background-color: "#17062A";
+}
+
+.answerBoxColor3{
+  background: #1E0936;
+}
+.numberBoxColor3{
+  background: #1E0936;
+}
+.delResetButtonColor3{
+  background: #56077C;
+  box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+.delResetButtonColor3:hover{
+  background: #8631AF;
+  box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+.ansCalcThemeColor3{
+  color: #FFE53D;
+}
+.buttonsColor3{
+  background-color: #331C4D;
+  box-shadow: 0px -4px 0px 0px #881C9E inset;
+  color: #FFE53D;
+}
+.equalsColor3{
+  color: black;
+  background-color: #00DED0;
+  box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+}
+
+.slide3{
+  background: #1E0936;
+}
+
+@media (max-width: 1000px) {
+  .container{
+    width: 375px;
+  }
+  .header{
+    width: 320px;
+    gap: 130px;
+  }
+  .answerBox{
+    width: 327px;
+    height: 88px;
+  }
+  .answer{
+    font-size: 40px;
+  }
+  .numbers-box{
+    width: 327px;
+    height: auto;
+  }
+  .number, .del{
+    width: 60px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 5px;
+  }
+  .reset{
+    margin-top: 5px;
+  }
+  .del{
+    font-size: 20px;
+    margin: 5px 0 5px 5px;
+    margin-top: -10px;
+  }
+  .number{
+    margin: 5px;
+  }
+  .reset, .equals{
+    width: 133px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 5px;
+  }
+  .reset-equals{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
